@@ -1,0 +1,53 @@
+.slideshow-wrapper {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.slideshow, .queued-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    opacity: 0.95;
+}
+.slideshow {
+    top: 0%;
+    left: 0%;
+}
+.slideshow-wrapper h1 {
+    text-shadow: 0 0 12px rgba(0,0,0);
+    position: absolute;
+    top: 60%;
+    color: #eee;
+    border-radius: 10px;
+    padding: 10px 40px;
+    transition: 0.2s ease;
+    z-index: 1;
+}
+
+/* toggle the timeoutSliding setTimeout in the useCallback alongside this */
+.slideshow.sliding, .queued-image.sliding {
+    animation: 1.5s linear enterfromright;
+}
+
+@keyframes enterfromright {
+    0% {
+      transform: translateX(0%);
+    }
+    67% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

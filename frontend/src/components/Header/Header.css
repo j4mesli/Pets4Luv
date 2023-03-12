@@ -1,0 +1,36 @@
+.header {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("/logos/pets4luv.png");
+    width: 120px;
+    height: 80px;
+    cursor: pointer;
+}
+.header .social-media {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .social-media svg {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.header .social-media svg:hover {
+    transform: translateY(2px);
+}

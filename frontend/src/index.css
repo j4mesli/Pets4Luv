@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+html, body, #root {
+    height: 100%;
+    /* Scrollbar Styles for Mozilla (Literally only Firefox) */
+    scrollbar-width: thin;
+    scrollbar-color: #8d8d8d #ccc;
+}
+body {
+    font-family: Raleway, sans-serif;
+    color: #333;
+    font-size: 1.4em;
+    margin: 0;
+    background: #eeeeee;
+}
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* Scrollbar Styles for Webkit (Literally everything else) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #8d8d8d;
+    border-radius: 6px;
+}
+  
