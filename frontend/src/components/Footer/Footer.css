@@ -130,3 +130,102 @@
     color: #eee;
     font-weight: 600;
 }
+
+@media (max-width: 700px) {
+    .footer .section.icons-and-links .image-box, .footer .section.icons-and-links .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        margin: 20px 10px;
+    }
+    .footer .socials svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: .1s ease-in-out;
+    }
+    .footer .section .links h3 {
+        font-size: 16px;
+    }
+    .footer .section.verification h4 {
+        font-size: 12px;
+        color: #eee;
+        font-weight: 600;
+    }
+    .footer .section .links {
+        height: 80px;
+    }
+}
+@media (max-width: 575px) {
+    .footer .section .links h3 {
+        font-size: 12px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .footer .section .links {
+        width: 240px;
+    }
+}
+@media (max-width: 430px) {
+    .footer .section.icons-and-links .image-box, .footer .section.icons-and-links .socials {
+        width: 60px;
+        height: 60px;
+        margin: 10px 5px;
+    }
+    .footer .section .links {
+        height: 60px;
+        width: 200px;
+    }
+    .footer .socials svg {
+        width: 20px;
+        height: 20px;
+    }
+    .footer .section .links h3 {
+        font-size: 12px;
+    }
+    .footer .section.verification h4 {
+        font-size: 10px;
+        color: #eee;
+        font-weight: 600;
+    }
+    
+}
+@media (max-width: 375px) {
+    .footer .section.newsletter {
+        padding: 5px 10px;
+        height: 40px;
+        overflow-x: hidden;
+    }
+    .footer .section.newsletter form {
+        min-width: 80%;
+    }
+    .footer .section.newsletter input[type="email"] {
+        padding: 10px 20px;
+        min-width: 34%;
+    }
+    .footer .section.newsletter input[type="submit"] {
+        padding: 10px;
+        min-width: 10%;
+    }
+    .footer .section.icons-and-links .image-box, .footer .section.icons-and-links .socials {
+        width: 40px;
+        height: 40px;
+        margin: 10px 5px;
+        max-width: 80%;
+        overflow-x: hidden;
+    }
+    .footer .section .links {
+        height: 40px;
+        width: 150px;
+    }
+    .footer .socials svg {
+        width: 16px;
+        height: 16px;
+    }
+    .footer .section.verification {
+        overflow-x: hidden;
+    }
+}

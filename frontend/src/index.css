@@ -12,6 +12,7 @@ body {
     font-size: 1.4em;
     margin: 0;
     background: #eeeeee;
+    position: relative;
 }
 .disabled {
     opacity: 0.5;

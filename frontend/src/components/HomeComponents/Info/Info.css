@@ -47,3 +47,79 @@
     width: 100%;
     height: 100%;
 }
+.info .card .text {
+    height: 200px;
+}
+
+@media (max-width: 1200px) {
+    .info {
+        width: 90%;
+    }
+    .info .card {
+        width: auto;
+        height: 475px;
+    }
+    .info p {
+        font-size: 16px;
+    }
+    .info h3.hyperlink {
+        font-size: 20px;
+    }
+    .info .card .card-photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 900px) {
+    .info .card {
+        height: 405px;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    .info h3.hyperlink {
+        font-size: 18px;
+    }
+    .info .card .card-photo {
+        width: 215px;
+        height: 215px;
+    }
+}
+@media (max-width: 700px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info p {
+        font-size: 16px;
+    }
+    .info h3.hyperlink {
+        font-size: 20px;
+    }
+    .info .card {
+        width: 320px;
+        height: 530px;
+    }
+    .info .card .card-photo {
+        width: 320px;
+        height: 320px;
+    }
+}
+@media (max-width: 330px) {
+    .info .card {
+        width: 275px;
+        height: 485px;
+    }
+    .info .card .card-photo {
+        width: 275px;
+        height: 275px;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    .info h3.hyperlink {
+        font-size: 20px;
+    }
+}

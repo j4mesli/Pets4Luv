@@ -1,10 +1,8 @@
 import './Navbar.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
-    
-
     return (
         <div className='navbar'>
             <nav>
