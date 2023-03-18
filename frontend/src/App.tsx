@@ -10,6 +10,7 @@ import Contribute from './views/Contribute/Contribute';
 import Services from './views/Services/Services';
 import Donate from './views/Donate/Donate';
 import Blog from './views/Blog/Blog';
+import BlogPost from './components/BlogPost/BlogPost';
 
 function App() {
 
@@ -29,9 +30,10 @@ function App() {
           </Route>
 
           <Route path="/Adopt" element={<Adopt />} />
-          <Route path="/Blog" element={<Blog />}>
-            {/* <Route path=":id" element={<BlogPost />} /> */}
-            <Route path=":id" element={<Blog />} />
+          <Route path="/Blog">
+            <Route path=":id" element={<BlogPost />} />
+            <Route path=""  element={<Blog />} />
+            <Route path="*"  element={<Navigate to="" />} />
           </Route>
 
           {/* Contribute Routes */}
